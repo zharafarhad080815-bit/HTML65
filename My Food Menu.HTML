@@ -1,0 +1,90 @@
+<!--You will build a colourful food menu page called My Food Menu. The page has a heading, a warm orange intro paragraph, a list of five food items where the third one is highlighted as the Chef's Special, a description paragraph with a big first letter, and two buttons that glow when you hover over them.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6600;
+            margin-top: 20px;
+        }
+        .intro {
+            background-color: #ffcc99;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        li {
+            background-color: #ffe6cc;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .chefs-special {
+            background-color: #ff9966;
+            font-weight: bold;
+        }
+        .description {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+        .description::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            float: left;
+            margin-right: 5px;
+        }
+        .buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .buttons button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .buttons button:hover {
+            box-shadow: 0 0 10px #ff6600;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Food Menu</h1>
+    <p class="intro">Welcome to our delightful food menu! Enjoy our carefully crafted dishes that will tantalize your taste buds.</p>
+    <ul>
+        <li>Spaghetti Carbonara</li>
+        <li>Margherita Pizza</li>
+        <li class="chefs-special">Grilled Salmon - Chef's Special</li>
+        <li>Caesar Salad</li>
+        <li>Chocolate Lava Cake</li>
+    </ul>
+    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="buttons">
+        <button>Order Now</button>
+        <button>View More</button>
+    </div>
+</body>
+</html>
